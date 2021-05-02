@@ -3,7 +3,7 @@ from discord.ext import commands
 import os
 
 client = commands.Bot(command_prefix= "!")
-path = r"\Users\Faiq Haidar\Documents\FAIQ\Coding\Python\bot\cogs"
+path = r"\"
 dir = os.listdir(path)
 
 for file in dir:
