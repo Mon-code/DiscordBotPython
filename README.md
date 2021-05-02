@@ -1,2 +1,1 @@
-# DiscordBotPython
 NOT FINAL DEVELOPMENT
