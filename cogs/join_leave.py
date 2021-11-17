@@ -14,10 +14,8 @@ class leave(commands.Cog):
 
     @commands.command(pass_context=True)
     async def leave(self, ctx):
-        server = ctx.message.server
-        channel = self.client.voice_client_in(server)
-        await channel.disconnect()
-        return
+        if (ctx.voice_client):
+            await ctx.guild.voice_client.disconnect()
 
 def setup(client):
     client.add_cog(leave(client))
